@@ -1,8 +1,8 @@
 # Credit Default Prediction – ML Assignment 2 (BITS WILP)
 
-This repository implements six ML classification models on the "Default of Credit Card Clients" dataset and provides an interactive Streamlit app for evaluation and visualization.
+This repository features six machine learning classification models built on the “Default of Credit Card Clients” dataset, along with an interactive Streamlit application for model evaluation and visualization.
 
-- Live App: <ADD AFTER DEPLOYMENT>
+- Live App: https://mlassignment2-yzc6kwff2uxvxjvvzv79uw.streamlit.app/
 - Dataset: https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset
 - Typical file: `UCI_Credit_Card.csv`
 - Target column: `default.payment.next.month` (binary 0/1)
@@ -10,7 +10,7 @@ This repository implements six ML classification models on the "Default of Credi
 ---
 
 ## Problem Statement
-Predict whether a credit card client will default on payment in the next month based on demographic, credit history, and billing/payment features.
+Forecast whether a credit card customer is likely to default on their payment in the upcoming month using demographic information, credit history, and billing and repayment data.
 
 ## Dataset Description
 - Source: UCI/Kaggle (see link above)
@@ -30,23 +30,23 @@ Predict whether a credit card client will default on payment in the next month b
 
 | ML Model Name       | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---------------------|----------|-----|-----------|--------|----|-----|
-| Logistic Regression |          |     |           |        |    |     |
-| Decision Tree       |          |     |           |        |    |     |
-| kNN                 |          |     |           |        |    |     |
-| Naive Bayes         |          |     |           |        |    |     |
-| Random Forest       |          |     |           |        |    |     |
-| XGBoost             |          |     |           |        |    |     |
+| Logistic Regression | 0.8078 | 0.7076 | 0.6883 | 0.2396 | 0.3555 | 0.3251 |
+| Decision Tree       | 0.7152 | 0.6079 | 0.3704 | 0.4115 | 0.3899 | 0.2052 |
+| kNN                 | 0.7928 | 0.7013 | 0.5487 | 0.3564 | 0.4322 | 0.3233 |
+| Naive Bayes         | 0.7525 | 0.7249 | 0.4515 | 0.5539 | 0.4975 | 0.3386 |
+| Random Forest       | 0.8133 | 0.7540 | 0.6356 | 0.3655 | 0.4641 | 0.3812 |
+| XGBoost             | 0.8183 | 0.7747 | 0.6604 | 0.3677 | 0.4724 | 0.3966 |
 
 ## Observations (fill after evaluation)
 
 | ML Model Name       | Observation about model performance |
 |---------------------|-------------------------------------|
-| Logistic Regression |                                     |
-| Decision Tree       |                                     |
-| kNN                 |                                     |
-| Naive Bayes         |                                     |
-| Random Forest       |                                     |
-| XGBoost             |                                     |
+| Logistic Regression | High precision but low recall, misses many defaults |
+| Decision Tree       | Moderate accuracy with balanced metrics, overfits possibly |
+| kNN                 | Decent performance, sensitive to feature scaling |
+| Naive Bayes         | High recall but low precision, many false positives |
+| Random Forest       | Strong ensemble performance with good AUC |
+| XGBoost             | Best overall with highest accuracy and AUC |
 
 ## Project Structure
 ```
